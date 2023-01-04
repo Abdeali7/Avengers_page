@@ -1,0 +1,135 @@
+:root {
+    --dark: #1f2937;
+    --textColor: white;
+    --blue: #3882f6;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark);
+    color: var(--textColor);
+    padding: 2rem 10rem;
+}
+header .logo{
+    font-size: 25px;
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.container {
+    background-color: var(--dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--textColor);
+    padding: 2rem 10rem;
+    text-align: start;
+}
+.container a{
+    background-color: var(--blue);
+    color: var(--textColor);
+    border: none;
+    border-radius: 10px;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;    
+}
+.container img {
+    max-width: 35vw;
+    height: auto;
+}
+
+.avengers {
+    padding: 3rem 10rem;
+    color: #1f2937;
+    font-weight: 00;
+}
+.avengers h2{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+.avengers .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.avengers .card{
+    max-width: 200px;
+}
+.avengers .card img{
+    width: auto;
+    max-height: 250px;
+    border: 3px solid var(--blue);
+    border-radius: 20px;
+}
+.avengers .card p{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 10rem;
+    text-align: start;
+    background-color: #e5e7eb;
+    font-size: 1.3rem;
+}
+.comment .author{
+    text-align: end;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    padding-right: 2rem;
+}
+
+.call_to_action{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 6rem 10rem;
+    color: var(--textColor);
+}
+.call_to_action .action{ 
+    background-color: var(--blue);
+    text-align: start;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    min-width: 900px;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+.call_to_action .action button{
+    background-color: var(--blue);
+    border-radius: 5px;
+    border: 2px solid var(--textColor);
+    padding: 10px 20px;
+    color: var(--textColor);
+    cursor: pointer;
+}
+
+footer{
+    background-color: var(--dark);
+    color: var(--textColor);
+    padding: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
